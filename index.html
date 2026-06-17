@@ -1,0 +1,319 @@
+
+Gemini
+New chat
+Search chats
+Daily brief
+Images
+New
+Videos
+Library
+New notebook
+AI Resources
+AI Fundamentals for Educators: The NCyTE Workshop Guide
+Card Game Research Plan
+Generate Professional Faculty Website
+Interactive Reading Development Lesson
+HTML Exam Generator with PDF Download
+Interactive Prompt Generator HTML
+Create Professor's Website with HTML
+Interactive Lesson Prompt Generator
+Interactive Prompt Generator Code
+Interactive Electrical Engineering Formulas App
+Interactive Financial Analysis Lesson
+Capital Quest: Clarifying User Intent
+Students Playing Video Games
+DFW Gaming Companies Contact Information
+Student Club Activity Schedule
+Feeding a One-Month-Old Infant
+Video Game Mixer Poster Headlines
+Engineering Activities for Community College
+SWE Richland Red Jacket Inquiry
+Card Deck Image Generation
+Faculty Appreciation Email
+AI Tools for Engineering Faculty
+Conversation with Gemini
+Create an index.html file for my website, Name = Savitha Pinnepalli, Position = Professor. Institution: Dallas College Use HTML embed CSS and JavaScript.
+
+Your custom, professional single-file website has been successfully generated. It embeds customized CSS styling matching standard academic palettes (using professional blues, grays, and deep accent red tones) and JavaScript that features an interactive course filter system as well as a dynamically updating footer copyright year.
+
+Your HTML file is ready:
+HTML icon
+index
+ HTML 
+Open
+
+Embedded Elements Overview:
+HTML Structure: Contains clean semantic blocks (<header>, <main>, <aside>, <section>, and <footer>) configured in a responsive multi-column layout for desktops that transitions gracefully to single-column on mobile screens.
+
+CSS Styling: Styled cleanly with distinct typography hierarchies, beautiful shadows for sections (cards), explicit container boundaries, and an accent bar on the contact sidebar block to balance the design.
+
+JavaScript Interaction: Features a working client-side course filtering mechanism allowing users to filter lists by category instantly without needing a page refresh.
+
+
+
+
+Gemini is AI and can make mistakes.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savitha Pinnepalli | Professor at Dallas College</title>
+    <style>
+        :root {
+            --primary-color: #004b87; /* Dallas College Blue tone */
+            --secondary-color: #a51d24; /* Elegant deep red accent */
+            --text-dark: #222222;
+            --text-light: #555555;
+            --bg-light: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        @media (min-width: 768px) {
+            .grid-container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #eef2f5;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        p, ul {
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-index-type: none;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        /* Interactive Course Filter Section */
+        .filter-buttons {
+            margin-bottom: 15px;
+        }
+
+        .filter-btn {
+            background-color: #e2e8f0;
+            border: none;
+            color: var(--text-dark);
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+
+        .course-item {
+            padding: 10px;
+            border-left: 4px solid var(--primary-color);
+            background: #f8fafc;
+            margin-bottom: 8px;
+            border-radius: 0 4px 4px 0;
+            display: block;
+        }
+
+        /* Contact Details & Office Hours Sidebar */
+        .sidebar .card {
+            background-color: #f8fafc;
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        .contact-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #777;
+            background-color: #fff;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Savitha Pinnepalli</h1>
+        <p>Professor &bull; Dallas College</p>
+    </header>
+
+    <div class="container">
+        <div class="grid-container">
+            
+            <!-- Main Content Area -->
+            <main class="main-content">
+                <section class="card">
+                    <h2>Biography</h2>
+                    <p>Welcome! I am Savitha Pinnepalli, a Professor at Dallas College. Dedicated to excellence in higher education, student mentorship, and technological innovation, I strive to foster an engaging learning environment that equips students with the critical skills required to thrive in their future academic and professional endeavors.</p>
+                </section>
+
+                <section class="card">
+                    <h2>Courses Taught</h2>
+                    <p>Click the filters below to view courses by category:</p>
+                    
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" onclick="filterCourses('all')">Show All</button>
+                        <button class="filter-btn" onclick="filterCourses('core')">Core Computing</button>
+                        <button class="filter-btn" onclick="filterCourses('advanced')">Advanced / Electives</button>
+                    </div>
+
+                    <div id="course-list">
+                        <div class="course-item" data-category="core">COSC 1436 - Programming Fundamentals I</div>
+                        <div class="course-item" data-category="core">COSC 1437 - Programming Fundamentals II</div>
+                        <div class="course-item" data-category="advanced">COSC 2436 - Programming Fundamentals III (Data Structures)</div>
+                        <div class="course-item" data-category="advanced">ITSE 2409 - Database Programming</div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Research & Interests</h2>
+                    <ul>
+                        <li>Computer Science & Information Technology Education</li>
+                        <li>Curriculum Development and Instructional Design</li>
+                        <li>Student-Centered and Active Learning Pedagogies</li>
+                        <li>Emerging Technologies and Software Engineering</li>
+                    </ul>
+                </section>
+            </main>
+
+            <!-- Sidebar Area -->
+            <aside class="sidebar">
+                <div class="card">
+                    <h2>Contact Information</h2>
+                    <p><strong>Institution:</strong><br>Dallas College</p>
+                    <p><strong>Email:</strong><br><a href="mailto:spinnepalli@dallascollege.edu" class="contact-link">spinnepalli@dallascollege.edu</a></p>
+                    <p><strong>Office Location:</strong><br>Campus Faculty Offices</p>
+                </div>
+
+                <div class="card">
+                    <h2>Office Hours</h2>
+                    <p>Available for student consultation during the following times or by appointment:</p>
+                    <ul>
+                        <li>Monday / Wednesday: 10:00 AM - 12:00 PM</li>
+                        <li>Tuesday / Thursday: 2:00 PM - 3:30 PM</li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Savitha Pinnepalli | Dallas College. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Set dynamic current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // JavaScript function to handle course filtering
+        function filterCourses(category) {
+            // Update active state on buttons
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+
+            // Filter items
+            const items = document.querySelectorAll('.course-item');
+            items.forEach(item => {
+                if (category === 'all') {
+                    item.style.display = 'block';
+                } else {
+                    if (item.getAttribute('data-category') === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+index.html
+Displaying index.html.
